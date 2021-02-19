@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MBA?PGDM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+  body{overflow-x: hidden;}
+  html{overflow-x: hidden;}
+  .box {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #056a9a;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    font-family: sans-serif;
+    font-weight: 700;
+    background-color: #fff;
+    margin-bottom: -10px;
+}
+.box:hover {
+    background-color: #9dcb3d;
+    background-image: linear-gradient(#de1212, #1f00a2);
+    color: #ffff;
+}
+.background-main{background-image: url(img/mountain2.png);
+    background-size: cover;
+    background-position: center;}
+    .get_banner {
+    background-image: url(img/black.jpg);
+    background-position: center;
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+.btn-style-one {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    /* line-height: 28px; */
+    padding: 8px 36px;
+    background: #ed1b24;
+    border: 1px solid #ed1b24;
+    border-radius: 33px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.border-shep {
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    /* margin-left: 40px; */
+    border-radius: 50%;
+    border: 2px solid #ed1b24;
+}
+.border-shep:before {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    content: '';
+    width: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.border-shep:after {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    content: '';
+    width: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+li{list-style: none;}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+      margin-top: 25px;
+
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+p{font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;}
+h2{font-size: 30px;
+    font-weight: 600;}
+
+h4{font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;}
+.course-img{    border: 1px solid #eaeaea;
+    padding: 5px;
+    background: #fff;height: 240px;}
+    .course-item{margin-top: 15px;}
+    .navbar{    position: fixed;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 3px -1px rgb(0 0 0 / 10%);
+    height: 70px;}
+    .v1 h2{color: #fff;font-size: 22px;}
+    .v1 p{color: #fff;}
+    .v1 h4{color: #fff; font-size: 18px;}
+    #icon-fb {background: #0044d4;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+    position: relative;
+    top: 6px;
+}
+#icon-fb2 {
+background:#00acee;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.fa-twitter:before {
+    content: "\f099";
+    position: relative;
+    top: 6px;
+}
+#icon-fb3 {
+    background: #0e76a8;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.fa-linkedin:before {
+    content: "\f0e1";
+    position: relative;
+    top: 6px;
+}
+#icon-fb4 {
+    background: #FF0000;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.fa-youtube-play:before {
+    content: "\f16a";
+    position: relative;
+    top: 6px;
+}
+#icon-inst {
+    background: #E1306C;
+   border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.fa-instagram:before {
+    content: "\f16d";
+    position: relative;
+    top: 6px;
+}
+</style>
+<body>
+  <!-----navication bar--------------->
+  <nav class="navbar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/getadmission.png" width="180px;" style="margin-top: -14px;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><p style="    font-size: 17px;
+    font-weight: 600;margin-top: 20px;"><span><i class="fa fa-phone" aria-hidden="true"></i>+91 851 285 7575</span>&nbsp;&nbsp;<span><i class="fa fa-phone" aria-hidden="true"></i>
++91 8956130190</span>   <!-- <span>|</span> <span><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
+info@affinityeducation.in</span> --></p></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <!-----navication bar--------------->
+  <section style="background-image: url(img/main-banner.jpeg);
+    background-size: cover;">
+  <div class="row" style="    margin-top: 70px;">
+    <div class="col-lg-8">
+      <!-- <img src="" style="width: 100%;">
+      <div class="npf_wgts" data-height="400px" data-w="d743466cabae108053c07542f8e89458" style="padding: 0px;"></div> -->
+    </div>
+    <div class="col-lg-4">
+    <!--   <img src="" style="width: 100%;"> -->
+      <div class="npf_wgts" data-height="400px" data-w="d743466cabae108053c07542f8e89458" style="padding: 0px;"></div>
+    </div>
+  </div>
+  </section>
+<section style="padding-bottom: 40px;background-image: url('img/get background banner 02.jpg');background-size: cover;background-position: center;">
+  <div class="container" style="    margin-bottom: -50px;
+">
+    <h1 class="text-center">Welcome To<span style="color:#ed1b24;"> Get Admission Info</span></h1>
+    <p class="text-center" style="
+    margin-top: -10px;">One of the trustworthy Educational Consultants for admission  in Engineering, Medical, Management and other job oriented courses in India</p>
+ <center><div class="border-shep text-center"></div></center>
+    <div class="row">
+      <div class="col-lg-5 col-sm-5">
+        <img src="img/about.png" style="width: 100%;">
+      </div>
+      <div class="col-lg-7 col-sm-7" style="text-align: justify;">
+        <h2>Why choose US </h2>
+        <hr id="hr6">
+        <p>Get Admission info is a well-named education consultancy of Delhi NCR. It is apart of <a href="https://affinityeducation.in/">Affinity education Pvt LTD</a> (a reputed educational consultant of India). We offer admission assistance to ambitious students in top colleges in India of Engineering, Management and Medical stream. </p>
+        <p>Get Admission info has an experienced team of education counsellors who offer you admission guidance to get admission in top management colleges in India at an affordable fee. They have well-researched data of 100+ management colleges in India. It will help you to choose the best colleges options according to your budget and preferences.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+<section style="background:#0b1d2b;color:#fff;padding-bottom: 50px;padding-top: 30px;">
+  <div class="container">
+   <h2>Why choose MBA/PGDM</h2>
+      <div class="border-shep text-center" style="margin-left: 40px;
+    position: relative;"></div>
+       <p>MBA and PGDM in India are the most popular master courses in management stream. It will enhance the skills of managing organizations. It provides you an advantage over other master courses and increase the chances to get a highly paid package. MBA Fees in India depends on the type of ownership of the college. Also, after studying in top Management colleges of India, you can start up your own business and have a dream future. </p>
+    </div>
+  </div>
+</section>
+  <section class="background-main" >
+<div class="container" style="padding-bottom: 40px;"> 
+
+  <div class="row">
+      <div class="col-lg-6" style="margin-top: 10px;">
+        <img src="img/Courses1.png" style="width: 100%;">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="" style="margin-top:20px;">What we offer you</h2>
+         <div class="border-shep text-center" style="margin-left: 40px;
+    position: relative;"></div>
+          <p>As a trusted educational consultant we uderstand your requirements to choose your desired college.  Keeping this in mind, we offer you our services</p>
+        <div class="row">
+          <div class="col-lg-6">
+          <div class="box">
+          <i class="fa fa-hand-o-right"></i>&nbsp;Free Expert counselling
+        </div>
+        <div class="box">
+          <i class="fa fa-hand-o-right"></i>&nbsp;Data of 100+ Management colleges
+        </div>
+        <div class="box">
+          <i class="fa fa-hand-o-right"></i>&nbsp;Assured admission
+        </div>
+           <div class="box">
+              <i class="fa fa-hand-o-right"></i>&nbsp;College comparison
+            </div>
+            <div class="box">
+          <i class="fa fa-hand-o-right"></i>&nbsp;Free Admission application process
+          </div>
+          </div>
+          <div class="col-lg-6">
+               
+        <div class="box">
+          <i class="fa fa-hand-o-right"></i>&nbsp;Answers to your queries
+        </div>
+        <div class="box">
+          <i class="fa fa-hand-o-right"></i>&nbsp;Rank Predictors and College predictors
+        </div>
+        <div class="box">
+          <i class="fa fa-hand-o-right"></i>&nbsp;Students reviews
+        </div>
+        <div class="box">
+          <i class="fa fa-hand-o-right"></i>&nbsp;Admission Updates
+        </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </div> 
+  </div>
+</div>
+</section>
+<section class="get_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center" style="color: #fff; margin-bottom: 16px;">Still Have Queries</h2>
+       <center><div class="border-shep text-center" style="margin-bottom: 20px;"></div></center> 
+        <p class="text-center" style="color: #fff;">Haven’t you found it yet? What are you looking for? Experienced counsellors of Get Admission Info are here to help you. You will surely get expert advice and admission assistance in top colleges in India. 
+Click here to get complete solution.</p>
+        <div class="link-btn text-center">
+                <a href="#" class="btn-style-one" data-toggle="modal" data-target="#myModal" style="color:#fff; background:#ed1b24!important;border-radius: 34px;">Apply Now</a>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:#0b1d2b;padding-bottom: 40px;padding-top: 20px;">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h2 class="text-center" style="color: #fff;">Top Branches In MBA/PGDM</h12>
+<center><div class="border-shep text-center" style="margin-bottom: 20px;margin-top: 15px;"></div></center> 
+</div>
+<div class="col-md-3 col-12">
+<div class="course-item">
+
+  <a href="#"><img class="img-fluid" src="img/finenc.jpeg" alt="management-img" style="width: 100%;"></a>
+<div class="course-img">
+<h4>Finance</h4>
+<p>MBA in Finance- A qualified person in finance will be in demand in the future as the companies need a person who can manage the financial crisis. Apart from this, students can do the job in various economic sectors.</p>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-12">
+<div class="course-item">
+<a href="#"><img class="img-fluid" src="img/marketing.jpeg" alt="management-img" style="width: 100%;"></a>
+<div class="course-img">
+<h4>Marketing</h4>
+<p>MBA in Marketing- MBA in Marketing will open the door to enter the media sector. Also, you can develop your career in Advertising, FMGE, and other popular sectors.   </p><br><br>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-12">
+<div class="course-item">
+<a href="#"><img class="img-fluid" src="img/optration.jpeg" alt="management-img" style="width: 100%;"></a>
+<div class="course-img">
+<h4>Operations</h4>
+<p>MBA in HR- It is the most challenging course of management. HR is the person, who is needed for every sector in various companies. You will find various jobs in this sector.</p><br><br>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-12">
+<div class="course-item">
+<a href="#"><img class="img-fluid" src="img/hr.jpeg" alt="management-img" style="width: 100%;"></a>
+<div class="course-img">
+<h4>Human Resources</h4>
+<p>MBA in Operations- MBA in Operation is a popular course of Management stream like finance, Marketing and HR. this course will enhance your skill to handle the situation of your Institution’s management. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+  <div class="container" style="margin-top: 20px;">
+    <h2 class="text-center" >Top Business Schools Delhi</h2>
+    <center><div class="border-shep text-center" style="margin-bottom: 20px;"></div></center> 
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
+  </div>
+</section>
+<section>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/bimtech-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Bimtech Delhi</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/fore-school-of-management-new-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Fore School Of Management</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/great-lakes-institute-of-management-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Great Lakes Institute Of Management</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/imi-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">IMI Delhi</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/imt-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">IMT Delhi</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/lbsim-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Ibsim Delhi</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/mdi-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">MDI Delhi</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+   <!--  <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/imi-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">IMI Delhi</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div> -->
+</div>
+</div>
+</section>
+<section>
+  <div class="container" style="margin-top: 20px;">
+    <h2 class="text-center">Top Business Schools Mumbai</h2>
+    <center><div class="border-shep text-center" style="margin-bottom: 20px;"></div></center> 
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
+  </div>
+</section>
+<section>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/cimr-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Cimr Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/jbims-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Jbims Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/kj-SOMAIYA-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">K J SOMAIYA mumbai</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/ln-Welingkar-Mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">L N Welingkar Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/met-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Met-Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/nl-dalmia-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">NL Dalmia Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/nmims-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Nmims Mumbai</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/sies-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Sies Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/simsree-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Simsree Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/sp-jain-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">SP Jain Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/MUMBAI/ubs mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Ubs Mumbai</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+   <!--  <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/sies-mumbai.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Sies Mumbai</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div> -->
+</div>
+</div>
+</section>
+<section>
+  <div class="container" style="margin-top: 20px;">
+    <h2 class="text-center">Top Business Schools Pune</h2>
+    <center><div class="border-shep text-center" style="margin-bottom: 20px;"></div></center> 
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
+  </div>
+</section>
+<section>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/bimm-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Bimm Pune</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/bvp-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Bvp Pune</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/dy-patil-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Dy Patil Pune</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/indira-institute-of-management-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Indira Institute of Management </h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/mit-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Mit Pune</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/Pumba-Pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Pumba Punei</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/riims-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Riims Pune</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/scmhrd-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Scmhrd Pune</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/sibm-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Sibm Pune</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/pune/sims-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Sims Pune</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+   <!--  <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/riims-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Riims Pune</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div> -->
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+   <!--  <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/scmhrd-pune.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Scmhrd Pune</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div> -->
+</div>
+</div>
+</section>
+<section >
+  <div class="container" style="margin-top: 20px;">
+    <h2 class="text-center">Top Business Schools Banglore</h2>
+    <center><div class="border-shep text-center" style="margin-bottom: 20px;"></div></center> 
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
+  </div>
+</section>
+<section style="margin-bottom: 40px;">
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Banglore/acharya-school-of-management-bangalore.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Acharya School Of Management</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Banglore/alliance-bangalore.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Alliance Bangalore</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Banglore/christ-bangalore.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Christ Bangalore</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Banglore/jagdish-sheth-school-of-management-bangalore.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Jagdish Sheth School Of Management</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Banglore/tapmi-bangalore.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Tapmi Bangalore</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <div class="hovereffect">
+        <img class="img-responsive" src="img/Banglore/xime-bangalore.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">Xime Bangalore</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+    <!-- <div class="hovereffect">
+        <img class="img-responsive" src="img/Banglore/mdi-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">MDI Delhi</h2><p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div> -->
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+   <!--  <div class="hovereffect">
+        <img class="img-responsive" src="img/Delhi/imi-delhi.jpg" alt="">
+            <div class="overlay">
+                <h2 style="font-size: 14px;">IMI Delhi</h2>
+        <p>
+          <a href="#" data-toggle="modal" data-target="#myModal">CLICK HERE</a>
+        </p>
+            </div>
+    </div> -->
+</div>
+</div>
+</section>
+<!--------------footer----------->
+<section style="    background: #0b1d2b;
+    padding-bottom: 40px;
+    padding-top: 20px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 v1">
+        <h2>Head Office Address</h2>
+        <p>Head Office: #1114, World Trade Tower(WTT), Sector 16 Noida, 201301 Noida, Uttar Pradesh, India</p>
+        <h4>Call Us:</h4>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91 851 285 7575</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91 895 613 0190</p>
+        <h4>Email:</h4>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;info@affinityeducation.in</p>
+      </div>
+      <div class="col-lg-3 v1">
+        <h2>Branch Office Address</h2>
+        <p>Office Address-Diamond Chambers, 9N, 9th floor,Block-1&2, 4, Chowringhee Ln,Park Street area, Kolkata, 700016</p>
+        <h4>Call Us:</h4>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91 7439636891</p>
+        <h4>Email:</h4>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;info@affinityeducation.in</p>
+      </div>
+      <div class="col-lg-3 v1">
+        <h2>Branch Office Address</h2>
+        <p>Address: 13, 3rd floor, Kamala regency, Dnyaneshwar paduka chowk, Opposite petrol pump FC road, Pune – 411004</p>
+        <h4>Call Us:</h4>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91 8956056350 </p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91 9990165628</p>
+        <h4>Email:</h4>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;info@affinityeducation.in</p>
+      </div>
+      <div class="col-lg-3 v1">
+        <h2>Social Link</h2>
+        <div class="">
+        <a href="https://www.facebook.com/affinityeducationconsultant/" data-placement="top" title="" target="_blank" data-original-title="Facebook"><i class="fa fa-facebook" id="icon-fb"></i></a>
+
+        <a href="https://twitter.com/AffinityPvt" data-placement="top" title="" target="_blank" data-original-title="Twitter"><i class="fa fa-twitter" id="icon-fb2"></i></a>
+
+        <a href="https://www.linkedin.com/company/affinity-education-consultant/" data-placement="top" title="" target="_blank" data-original-title="linkedin"><i class="fa fa-linkedin" id="icon-fb3"></i></a>
+        <a href="https://www.youtube.com/channel/UCcC0NAQSf0LTrM4eJh-Z37Q" data-placement="top" title="" target="_blank" data-original-title="Youtube"><i class="fa fa-youtube-play" id="icon-fb4"></i></a>
+        <a href="https://www.instagram.com/affinityeducationofficial/" data-placement="top" title="" target="_blank" data-original-title="Instagram"><i class="fa fa-instagram" id="icon-inst"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--------------footer----------->
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" style="    background: #1ea9c9;
+    opacity: 3.6;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    color: #fff;
+    position: relative;
+    left: 6px;
+    top: -5px;
+    z-index: 999;">&times;</button>
+        <div class="">
+          <div class="row" style="margin-bottom: 0px;">
+            <div class="col-lg-6 form-img-0" style="padding-right: 0px;">
+              <img src="img/form.jpg" style="width: 100%;    border-radius: 5px;">
+            </div>
+            <div class="col-lg-6 text-center" style="margin-top: -30px;">
+              <img src="img/get-logo.png" style="width: 100px;margin-top: 20px">
+              <h4 class="text-center" style="padding-left:30px;padding-right: 30px;margin-bottom: 5px;color: #002347;">Still not Got the Information you are Looking for?</h4>
+              <p class="text-center" style="padding-left:30px;padding-right: 30px;">Our Experienced Counsellors are here to Answer your Queries. Ask them now</p>
+          <!-- <iframe id="leadform" width="100%" height="400px;;;" src="https://crm.affinityeducation.in/forms/wtl/c665263e4c5115eea24c75b2fe6a3933" frameborder="0" allowfullscreen="" style="padding: 0px;"></iframe> -->
+          <div class="npf_wgts" data-height="400px" data-w="d743466cabae108053c07542f8e89458" style="padding: 0px;"></div>
+
+        </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!---------------------popupend---------------------->
+<!------------------footer icon enqury now Start--------------->
+<div class="link-btn text-center">
+                <a id="but" href="#" class="btn-style-one" data-toggle="modal" data-target="#myModal" style="    color: #fff;
+    background: #ed1b24!important;
+    position: absolute;
+    right: -72px;
+    z-index: 9999;
+    top: 400px;
+    position: fixed;
+    transform: rotate(90deg);border-radius: inherit;">Enquiry Now</a>
+       <a id="but2" href="#" class="btn-style-one br1" data-toggle="modal" data-target="#myModal" style="
+    position: fixed;
+    bottom: 7px;
+    right: 33%;
+    background: #1877f2;
+    color: #fff;
+    z-index: 999;
+    font-size: 15px;
+    /* padding: 5px; */
+    font-weight: 600;
+    border-radius: 20px;
+
+}">Enquiry Now</a>
+            </div>
+    <!-- GetButton.io widget -->
+    <style type="text/css">
+         @media screen and (max-width: 600px) {
+  #but{
+    display: none;
+  }
+}
+        @media screen and (max-width: 1920px) {
+  #but2{
+    display: none;
+  }
+}
+        @media screen and (max-width: 600px) {
+  #but2{
+    display: block;
+  }
+}
+    </style>
+
+    <style type="text/css">
+          .br1 {
+        background-color: #1c87c9;
+        
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #faa21a;
+          box-shadow: 0 0 5px #faa21a;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+         background-color: #428bca;
+    box-shadow: 0 0 5px #428bca;
+        }
+      }
+      .br1 {
+        animation: glowing 1300ms infinite;
+      }
+</style>
+<!---------------------popupstart---------------------->
+<!------------------footer icon enqury now End--------------->
+<script type="text/javascript">var s=document.createElement("script");  s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js";  document.body.appendChild(s);</script>
+
+<style type="text/css">
+    .widgetheading{color:#fff !important}
+</style>
+</body>
+<script type="text/javascript">var s=document.createElement("script");  s.type="text/javascript"; s.async=true; s.src="https://widgets.nopaperforms.com/emwgts.js";  document.body.appendChild(s);</script>
+</html>
